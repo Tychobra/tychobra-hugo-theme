@@ -1,0 +1,19 @@
+{{ partial "head" . }}
+<div id="wrapper" class="toggled">
+{{ partial "sidebar.html" . }}
+<div class="col-12">
+  {{ partial "navToggle.html" . }}
+  <div class="row main-content">
+    <div class="content-column-content col-xl-10">
+      <h1>{{ .Title }}</h1>
+        <br />
+        <br />
+        <div class="card">
+          <div class="card-block">
+          {{ .Content }}
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+{{ partial "foot" . }}

@@ -1,0 +1,27 @@
+<div id="sidebar-wrapper">
+  <div id="sidebar-content">
+    <h1 class="sidebar-heading">
+      <a href="/">
+        <img src="/img/ractuary-logo.png" height="50" width="50"/> {{ .Site.Title }}
+      </a>
+    </h1>
+    <br />
+    <ul class="nav flex-column">
+      {{ $url := .Site.BaseURL }}
+      {{ range .Site.Params.navlinks }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ $url }}{{ .url }}">
+          <div class="row">
+            <div class="col-2">
+              <i class="{{ printf "fa fa-%s" .icon }}"></i> 
+            </div>
+            <div class="col-10">
+              {{ .name }}
+            </div>
+          </div>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>

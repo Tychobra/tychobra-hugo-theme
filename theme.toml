@@ -1,0 +1,11 @@
+name = "tychobra-hugo-theme"
+license = "MIT"
+licenselink = "https://github.com/tychobra/tychobra-hugo-theme/blob/master/LICENSE"
+description = "Simple theme with sidebar and bootstrap material design"
+homepage = "https://github.com/tychobra/tychobra-hugo-theme"
+features = ["disqus", "bootstrap", "material design", "responsive", "google analytics"]
+min_version = 0.17
+
+[author]
+  name = "Andy Merlino"
+  homepage = "https://github.com/merlinoa"

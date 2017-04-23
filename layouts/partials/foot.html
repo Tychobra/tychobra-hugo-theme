@@ -1,0 +1,15 @@
+    <br />
+    <hr />
+    <div class="row main-content">
+      <div class="col-12">
+        <p class="copyright pull-right">
+          {{ with .Site.Params.copyright }}
+            {{ . | safeHTML }} | All Rights Reserved
+          {{ end }}
+        </p>
+      </div>
+    </div>
+  </div>
+  {{ partial "scripts.html" . }}
+</body>
+</html>

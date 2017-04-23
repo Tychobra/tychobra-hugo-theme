@@ -1,0 +1,46 @@
+<!-- Used to display 1 full blogpost 
+putting this in post/ rather than blog/ because .Rmd docs often need static data
+or create iframes and we do not want these to show up as blog posts.  To get a post
+to be displayed you must set type: "post" in the YAML front matter
+-->
+
+{{ partial "head.html" . }}
+<div id="wrapper" class="toggled">
+{{ partial "sidebar.html" . }}
+<div class="col-xl-10">
+  {{ partial "navToggle.html" . }}
+    <div class="main-content">
+      <div class="card">
+        <div class="card-block">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="post-image">
+            <img src="{{ .Site.BaseURL }}{{ .Params.image }}" class="img-responsive" alt="" width="100%"/>
+          </div>
+        </div>
+  
+        <div class="col-sm-9">
+          <h2>{{ .Title }}</h2>
+            <p>
+              By {{ .Params.author }}
+            </p>
+  
+            <p>
+              {{ .Date.Format "January 2, 2006" }}
+            </p>
+                    
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-12">
+          {{ .Content | safeHTML }}
+          <br />
+          {{ partial "comments.html" . }}
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+</div>
+{{ partial "foot.html" . }}
