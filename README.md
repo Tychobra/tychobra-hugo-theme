@@ -2,7 +2,7 @@
 
 A simple Hugo theme created specifically for use with [blogdown](https://github.com/rstudio/blogdown)
 
-### [Live Example Site](https://ractuary.github.io/)
+### [Live Example Site](https://ractuary.github.io/ractuary)
 
 ### Why I made this theme
 
