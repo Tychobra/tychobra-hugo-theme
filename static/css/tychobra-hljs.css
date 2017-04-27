@@ -1,0 +1,31 @@
+/* Code highlighting */
+code {
+  margin: 0 2px;
+  color: #e96900;
+  padding: 3px 5px;
+  font-size: 0.8em;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  background-color: #f8f5ec;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background-color: #f8f5ec;
+}
+
+.hljs-number{
+  color: #008080;
+}
+
+.hljs-string {
+  color: #f92672;
+}
+
+.hljs-comment {
+  color: #6272a4;
+  font-style: italic;
+}
