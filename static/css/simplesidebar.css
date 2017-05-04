@@ -1,7 +1,7 @@
 /* Toggle Styles */
 
 #sidebar-wrapper {
-    z-index: 99;
+    z-index: 500;
     position: fixed;
     left: 250px;
     width: 0;
@@ -9,7 +9,7 @@
     margin-left: -250px;
     overflow-y: auto;
     overflow: hidden;
-    background: #31708f;
+    background: #222;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -23,7 +23,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #f5f8f9;
-  color: #31708f !important;
+  color: #4285f4 !important;
 }
 
 .menu-toggled {
@@ -51,18 +51,18 @@
 }
 
 .sidebar-heading a {
-  color: #222;
+  color: #f5f8f9;
   text-decoration: none;
 }
 
 .sidebar-heading a:hover {
-  color: #f5f8f9;;
+  color: #4285f4;
   text-decoration: none;
 }
 
 
 .nav a {
-  color: #222;
+  color: #f5f8f9;
   font-size: 20px;
   margin-right: -20px;
   margin-left: -20px;
@@ -70,11 +70,12 @@
 
 .nav a:hover {
   text-decoration: none;
-  color: #f5f8f9;
+  color: #4285f4;
 }
 
 .nav .active a {
   font-weight: bold;
-  color: #f5f8f9;
+  color: #4285f4;
   background: rgba(255,255,255,0.2);
+  z-index: 1000;
 }
